@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="author" content="Rob Hitt">
+    <meta name="description" content="Tic Tac Toe">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="fondo">
+        <span id="timer"></span>
+        <h1 class="header">Juego de Michi</h1>
+    </div>
+    <div class="principal">
+
+        <div class="section__aside">
+            <h2 class="section__aside-h2" id="player1_title">Jugador 1</h2>
+            <picture class="section__aside-picture">
+                <img src="recursos/icon2.png" alt="" id="img_player1">
+            </picture>
+            <div class="section__div">
+                <p class="section__div-jugador"></p>
+                <p class="section__div-number-score pj">Puntaje :
+                    <p class="section__div-number-score pj" id="score_1">0</p>
+                </p>
+            </div>
+        </div>
+        <div class="c">
+            <div class="enter-Jugador">
+
+                <form id="jugador-form">
+                    <div class="player-container">
+                        <label fsor="player1">Jugador 1</label>
+                        <input type="text" placeholder="ingresar nombre" name="player1" id="player1" class="input-field" />
+                    </div>
+                    <div class="player-container">
+                        <label for="player2">Jugador 2</label>
+                        <input type="text" placeholder="ingresar nombre" name="player2" id="player2" class="input-field" />
+                    </div>
+
+                    <input type="submit" class="submit-btn" value="Start Game " id="juego" />
+                </form>
+            </div>
+
+            <div class="tabla__michi ocultar-contenido">
+                <p id="tiempoS"></p>
+                <div class="tabla_celdas--michi"></div>
+
+                <div class="board__container">
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="0"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="1"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="2"></div>
+                    </div>
+
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="3"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="4"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="5"></div>
+                    </div>
+
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="6"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="7"></div>
+                    </div>
+                    <div class="tabla__celda">
+                        <div class="tablas_celdas box__audio" data-id="8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reset ocultar--tabla">
+                <div class="reset__text">
+                </div>
+                <button class="repetir-btn" value="replay">
+                    <span class="clear-board">Reiniciar</span>
+                </button>
+                <button class="repetir-btn boton-inicio">
+                    <span class="clear-board">Inicio</span>
+                </button>
+            </div>
+        </div>
+        <div class="section__aside">
+            <h2 class="section__aside-h2" id="player2_title">Jugador 2</h2>
+            <picture class="section__aside-picture">
+                <img src="recursos/icon1.1.png" alt="" id="img_player2">
+            </picture>
+            <div class="section__div">
+                <p class="section__div-jugadorY"></p>
+                <p class="section__div-number-score pj">Puntaje :
+                    <p class="section__div-number-score pj" id="score_2">0</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class=" p-4  col-16">
+        <img src="recursos/iconoFinal.png" alt="">
+        <p> Final - Lenguaje JavaScript</p>
+        <p>Alumno : Milton Avalos Pucyura</p>
+        <p>Profesor : Anibal Mamani </p>
+    </footer>
+    <script type="text/javascript" src="js/appFinal.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
